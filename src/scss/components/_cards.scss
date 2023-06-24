@@ -1,0 +1,96 @@
+.cards {
+    margin-bottom: 256px;
+ &-title {
+    color: $white;
+font-size: 42px;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 53px;
+ }
+ &-inner {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-bottom: 90px;
+ }
+ &-item {
+    max-width: 320px;
+    width: 100%;
+    background-color: $white;
+ }
+ &-content {
+    padding: 25px 23px 30px 24px;
+ }
+ &-name {
+    color: #171717;
+    font-size: 14px;
+    font-family: Mulish;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+ }
+ &-descr {
+    color: #171717;
+font-size: 16px;
+font-family: Montserrat;
+line-height: 26px;
+margin-bottom: 20px;
+ }
+ &-text {
+    color: #666;
+    line-height: 24px;
+    margin-bottom: 20px;
+ }
+ &-author {
+    color: #666;
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 25px;
+ }
+ &-btn {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    color: $white;
+font-size: 14px;
+font-family: Mulish;
+font-weight: 600;
+    padding: 16px 10px;
+    background-color: #171717;
+    transition: background-color 0.3s linear;
+    &:hover {
+        background-color: #4b4747;
+    }
+ }
+}
+.cards-button_container {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1477px) {
+    .cards-inner {
+        grid-template-columns: repeat(4, 1fr);
+     }
+}
+@media (max-width: 1205px) {
+    .cards-inner {
+        grid-template-columns: repeat(3, 1fr);
+     }
+}
+@media (max-width: 955px) {
+    .cards-inner {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+     }
+}
+@media (max-width: 647px) {
+    .cards-inner {
+        grid-template-columns: repeat(1, 1fr);
+     }
+     .cards-item {
+        width: 100%;
+     }
+}
